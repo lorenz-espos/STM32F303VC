@@ -1,0 +1,100 @@
+[
+  {
+    "ID": "c:main.c@8@macro@RCC_AHBENR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_AHBENR",
+    "location": {
+      "column": "9",
+      "line": "1",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 3\\main.c"
+    },
+    "name": "RCC_AHBENR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@57@macro@GPIOA_MODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_MODER",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 3\\main.c"
+    },
+    "name": "GPIOA_MODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@107@macro@GPIOE_MODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOE_MODER",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 3\\main.c"
+    },
+    "name": "GPIOE_MODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@157@macro@GPIOE_ODR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOE_ODR",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 3\\main.c"
+    },
+    "name": "GPIOE_ODR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@205@macro@GPIOA_IDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_IDR",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 3\\main.c"
+    },
+    "name": "GPIOA_IDR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@p",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "p",
+    "location": {
+      "column": "15",
+      "line": "6",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 3\\main.c"
+    },
+    "name": "p",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void main(void)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 3\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]

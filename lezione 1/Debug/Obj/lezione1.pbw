@@ -1,0 +1,30 @@
+[
+  {
+    "ID": "c:@puntatore",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "puntatore",
+    "location": {
+      "column": "15",
+      "line": "1",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 1\\main.c"
+    },
+    "name": "puntatore",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void main(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 1\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "ID": "c:@p",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "p",
+    "location": {
+      "column": "16",
+      "line": "1",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 2\\main.c"
+    },
+    "name": "p",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void main(void)",
+    "location": {
+      "column": "6",
+      "line": "2",
+      "path": "C:\\Users\\lorenzo\\Desktop\\lmm esercizi\\esame\\lezione 2\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]
