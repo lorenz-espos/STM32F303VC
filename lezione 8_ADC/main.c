@@ -1,14 +1,14 @@
 #include <stm32f30x.h>
 float risultato;
 
-void ADCsetup(){
-  ADC1->CR &=~ADC_CR_ADVREGEN_1;
-  ADC1->CR|=ADC_CR_ADVREGEN_0;
-  for(int i=0;i<1000;i++);
+void ADCsetup(){//si effettua a adc disabilitato
+  ADC1->CR &=~ADC_CR_ADVREGEN_1;//10->00
+  ADC1->CR|=ADC_CR_ADVREGEN_0;//00->01
+  for(int i=0;i<1000;i++);//attendo 10us
   
-  ADC1_2->CCR|=ADC12_CCR_CKMODE_0;
+  ADC1_2->CCR|=ADC12_CCR_CKMODE_0;//abilito il clock dal bus ahb
   
-  ADC1->CR|=ADC_CR_ADCAL;
+  ADC1->CR|=ADC_CR_ADCAL;//avvio la calibrazione
   while((ADC1->ISR & ADC_ISR_ADRD) != ADC_ISR_ADRD);
   
   ADC1->CR|=ADC_CR_ADEN;
@@ -27,8 +27,8 @@ void ADCsetup(){
 void main()
 {
   
-RCC->AHBENR|=RCC_AHBENR_GPIOAEN | RCC_AHBENR_ADC12EN;
-GPIOA->MODER |=GPIO_MODER_MODER0;
+RCC->AHBENR|=RCC_AHBENR_GPIOAEN | RCC_AHBENR_ADC12EN;//abilito il clock a GPIOA E ADC12
+GPIOA->MODER |=GPIO_MODER_MODER0;//moder in modalita 11
 ADCsetup();
 ADC1->CR |=ADC_CR_ADSTART;
 
