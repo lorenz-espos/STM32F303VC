@@ -10,11 +10,13 @@ void main()
  RCC->AHBENR |= RCC_AHBENR_GPIOAEN;//ABILITO IL CLOCK AL PULSANTE
  RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;//ABILITO IL CLOCK AL TIMER
  
+ GPIOA->MODER &=ËœGPIO_MODER_MODER0;
+ 
  while(1){
    if((GPIOA->IDR & GPIO_IDR_0)== GPIO_IDR_0){
    TIM2->CR1=1;//ABILITO IL CONTEGGIO
    TIM2->CNT=0;
-   while((GPIOA->IDR & GPIO_IDR_0)== GPIO_IDR_0);//attendo mentre il tasto è premuto
+   while((GPIOA->IDR & GPIO_IDR_0)== GPIO_IDR_0);//attendo mentre il tasto ï¿½ premuto
    TIM2->CR1=0;
    contatore=TIM2->CNT;//copio il valore del contatore
    tau=(float)contatore*Tck;//calcolo l' intervallo di tempo trascorso

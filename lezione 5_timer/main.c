@@ -6,10 +6,10 @@ void main(){
   GPIOE->MODER=0X55550000;//imposto l'output digitale
   
   
- TIM2->CR1 =1;// abilito il contatore
+
   TIM2->ARR=4000000;//inserisco arr
   TIM2->CNT=0;//imposto cnt a 0
-  
+   TIM2->CR1 =1;// abilito il contatore
   while(1){
     if((TIM2->SR & TIM_SR_UIF)==TIM_SR_UIF && !flag){//accendo il led
       GPIOE->ODR=(1<<8);
